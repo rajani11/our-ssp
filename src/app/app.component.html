@@ -1,2 +1,6 @@
+<!-- <router-outlet></router-outlet> -->
 
-<router-outlet></router-outlet>
+<div [ngClass]="{'page-content': !noHeader}">
+    <app-header *ngIf="!noHeader"></app-header>
+    <router-outlet></router-outlet>
+</div>

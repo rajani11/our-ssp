@@ -1,1 +1,68 @@
-<p>header works!</p>
+<div (clickOutside)="hideNav = true" [ngClass]="[hideNav ? 'not-active' : 'active-menu']" class="sidebar">
+        <div class="blue-nav">
+            <ul>
+                <li class="open-menu">
+                    <img (click)="hideNav = !hideNav" src="assets/images/menu.svg" class="icon-img">
+                    <span><img src="assets/images/logo.svg"></span>
+                </li>
+                <li class="close-menu">
+                    <img (click)="hideNav = !hideNav" src="assets/images/close.svg" class="icon-img">
+                    <span (click)="hideNav = !hideNav"><img src="assets/images/logo.svg"></span>
+                </li>
+                <li (click)="hideNav = true" class="active" >
+                    <a [routerLink]="['./taskboard']" >
+                        <img src="assets/images/Shape.svg" class="icon-img">
+                        <span>Taskboard </span>
+                    </a>
+                </li>
+                <li (click)="hideNav = true" >
+                  <a [routerLink]="['./taskboard']" >
+                      <img src="assets/images/api.svg" class="icon-img">
+                      <span>Taskboard </span>
+                  </a>
+              </li>
+              <li (click)="hideNav = true" >
+                <a [routerLink]="['./taskboard']" >
+                    <img src="assets/images/invoice.svg" class="icon-img">
+                    <span>Taskboard </span>
+                </a>
+            </li>
+                <li (click)="hideNav = true" >
+                    <a [routerLink]="['./lookup']">
+                        <img src="assets/images/customer.svg" class="icon-img">
+                        <span>Lookup</span>
+                    </a>
+                </li>
+                <li  >
+                    <a (click)="hideNav = true">
+                        <img src="assets/images/information.svg" class="icon-img">
+                        <span>Settings</span>
+                    </a>
+                </li>
+                
+            </ul>
+            <p class="copy">
+                <span class="copy-img"></span>
+                <span>&copy; Jocata GRID <sup>TM</sup><br> V 4.1. All Rights Reserved.</span>
+            </p>
+        </div>
+      </div>
+      
+      <header class="site-header">
+        <div class="logo-wrap">
+            <img src="assets/images/logo.svg">
+        </div>
+        <div class="user-wrap" >
+            <div class="dropdown-wrap">
+                <button type="button" class="current-user" >Ramya</button>
+               
+                    <!-- <ul class="dropdown-content">
+                        <li><a href="javascript:;">Profile</a></li> 
+                        <li><a href="javascript:;" (click)="logout()">Logout</a></li>
+                    </ul> -->
+                
+            </div>
+            <span class="user"><img src="assets/images/.svg"></span>
+            
+        </div>
+      </header> 

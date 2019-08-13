@@ -1,1 +1,35 @@
-<p>login works</p>
+<section class="login-section">
+        <div class="login-left">
+            <div class="login-content">
+                <h6 [innerHTML]="'Ramya' "></h6>
+                <h3 [innerHTML]="'Kola' "></h3>
+            </div>
+        </div>
+        <div class="login-right">
+            <a class="jocata-logo">
+                <img src="assets/images/logo-jocata.svg" alt="Jocata Grid">
+            </a>
+            <div>
+                    <form class="login-form " >
+                            <mat-form-field>
+                                <input matInput [placeholder]="'User Name' "name="name" autocomplete="off" >
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput [placeholder]="'Password' "type="password" name="password" autocomplete="off">
+                                <mat-error ></mat-error>
+                            </mat-form-field>
+            
+                             <div class="login-button-wrap">
+                                <a href="javascript:;" [innerHTML]="'Forgot Password' " class="change-password-link" (click)="showPassword()"></a>
+                                <div class="right-btn">
+                                   
+                                    <button type="submit" (click)="login()" class="btn">
+                                        <span [innerHTML]="'LOGIN' "></span>
+                                    </button>
+                                </div>
+                            </div> 
+                            <!-- <a href="javascript:;" [innerHTML]="'grid_login.lbl_forgot_password' "  class="forgot-password-link"></a> -->
+                        </form>
+            </div>
+        </div>
+    </section>
