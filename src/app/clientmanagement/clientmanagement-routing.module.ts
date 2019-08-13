@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClientmanagementComponent } from './clientmanagement.component';
-import { ViewComponent } from './components/view/view.component';
-import { AddNewClientComponent } from './components/add-new-client/add-new-client.component';
-
+import { AllClientsComponent } from './tabs/allclients.component';
+import { LiveComponent } from './tabs/live.component';
+import { UatComponent } from './tabs/uat.component';
+import { PocComponent } from './tabs/poc.component';
 const routes: Routes = [
     {
         path: '',
         component: ClientmanagementComponent,
         children: [
-            { path: '', redirectTo: 'view', pathMatch: 'full' },
-            { path: 'view', component: ViewComponent },
-            { path: 'add-new-client', component: AddNewClientComponent }
+            { path: '', redirectTo: 'all-clients', pathMatch: 'full' },
+            { path: 'all-clients', component: AllClientsComponent },
+            { path: 'live', component: LiveComponent },
+            { path: 'uat', component: UatComponent },
+            { path: 'poc', component: PocComponent },
         ]
     }
 ]

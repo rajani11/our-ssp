@@ -1,1 +1,35 @@
-<router-outlet></router-outlet>
+<div class="user-management-wrapper">
+    <div class="user-tab-slider">
+        <mat-tab-group routerTabs class="demo-tab-group top-tab">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <a [routerLink]="['./all-clients']" >
+                        ALL CLIENTS
+                    </a>
+                </ng-template>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <a [routerLink]="['./poc']" >
+                        POC
+                    </a>
+                </ng-template>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <a [routerLink]="['./uat']" >
+                        UAT
+                    </a>
+                </ng-template>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <a [routerLink]="['./live']" >
+                        LIVE
+                    </a>
+                </ng-template>
+            </mat-tab>
+        </mat-tab-group>
+        <router-outlet></router-outlet>
+    </div>
+</div>

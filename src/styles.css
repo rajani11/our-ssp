@@ -2,3 +2,7 @@
 
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+/* tabs style */
+.user-management-wrapper {
+    margin-top: 30px;
+}

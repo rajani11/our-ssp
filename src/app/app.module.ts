@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './core/header.component';
-
+import { AddNewClientComponent } from './add-new-client/add-new-client.component';
+import 'hammerjs';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HeaderComponent,
+    AddNewClientComponent,
   ],
   imports: [
     BrowserModule,

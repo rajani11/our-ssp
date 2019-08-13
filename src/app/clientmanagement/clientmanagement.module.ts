@@ -5,9 +5,10 @@ import { SharedModule } from '../shared/shared.module';
 import { ClientmanagementRoutingModule } from './clientmanagement-routing.module';
 
 import { ClientmanagementComponent } from './clientmanagement.component';
-import { ViewComponent } from './components/view/view.component';
-import { AddNewClientComponent } from './components/add-new-client/add-new-client.component';
-
+import { AllClientsComponent } from './tabs/allclients.component';
+import { LiveComponent } from './tabs/live.component';
+import { UatComponent } from './tabs/uat.component';
+import { PocComponent } from './tabs/poc.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -18,8 +19,10 @@ import { AddNewClientComponent } from './components/add-new-client/add-new-clien
     ],
     declarations: [
         ClientmanagementComponent,
-        ViewComponent,
-        AddNewClientComponent,
+        AllClientsComponent,
+        LiveComponent,
+        UatComponent,
+        PocComponent
     ],
     providers: [
     ]

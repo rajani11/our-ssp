@@ -16,6 +16,7 @@ import { AppMaterialModule } from './material.module';
         FormsModule,
         CommonModule,
         ReactiveFormsModule,
+        AppMaterialModule
     ],
     providers: [
     ],
